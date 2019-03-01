@@ -1,0 +1,4 @@
+v1, 27.05.2014
+v1.01, 07.06.2014. Separate package and scripts.
+v1.02, 08.06.2014. Proper packaging for pypi.
+V2.00, 02.26.2019. Implement MCM and VTCM.
