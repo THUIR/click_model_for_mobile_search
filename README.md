@@ -95,6 +95,9 @@ For MCM, please cite:
 
 Jiaxin Mao,Cheng Luo, Min Zhang and Shaoping Ma. Constructing Click Models for Mobile Search. The 41st International ACM SIGIR Conference on Research and Development in Information Retrieval. (SIGIR 2018)
 
+For VTCM, please cite:
+
+Not yet published.
 
 ## Contact
 
