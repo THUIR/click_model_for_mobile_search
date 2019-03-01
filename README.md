@@ -11,7 +11,7 @@ Published under the BSD license.
 # How to install
 
 ```default
-git clone https://github.com/....git
+git clone https://github.com/THUIR/click_model_for_mobile_search.git
 cd mobile_click_model
 python setup.py install
 ```
@@ -64,13 +64,28 @@ You can train and test a click model with given example data:
 python test_click_models.py ../data/train ../data/test -m MCM-VPT -N 1 -M 1 -o ../mcm_mr --ignore_no_clicks --ignore_no_viewport --viewport_time
 ```
 
-``-m``: The click model that you would like to run, such as MCM-VPT (VTCM), MCM, and other popular click models.
-``-N``: The number of files that you would like to use for training in the train dictionary.
-``-M``: The number of files that you would like to use for test in the test dictionary.
-``-o``: The path to output dictionary.
-``--ignore_no_clicks``: Ignore the sessions that don't contain any click.
-``--ignore_no_viewport``: Ignore the sessions that don't contain viewport time information
-``--viewport_time``: Read viewport time information of train and test dataset.
+- ``-m``: The click model that you would like to run, such as MCM-VPT (VTCM), MCM, and other popular click models.
+
+- ``-N``: The number of files that you would like to use for training in the train dictionary.
+
+- ``-M``: The number of files that you would like to use for test in the test dictionary.
+
+- ``-o``: The path to output dictionary.
+
+- ``--ignore_no_clicks``: Ignore the sessions that don't contain any click.
+
+- ``--ignore_no_viewport``: Ignore the sessions that don't contain viewport time information
+
+- ``--viewport_time``: Read viewport time information of train and test dataset.
+
+- ``-V``: The viewport time model used in VTCM (used with ``-m MCM-VPT``). 
+
+  - ``0``: VTCM$_e$ with log-normal
+  - ``1``: VTCM$_e$ with gamma
+  - ``2``: VTCM$_e$ with Weibull 
+  - ``3``: VTCM$_c$ with log-normal
+  - ``4``: VTCM$_c$ with gamma
+  - ``5``: VTCM$_c$ with Weibull
 
 
 ## Relevance estimation
@@ -95,9 +110,6 @@ For MCM, please cite:
 
 Jiaxin Mao, Cheng Luo, Min Zhang, Shaoping Ma. Constructing Click Models for Mobile Search. The 41st International ACM SIGIR Conference on Research and Development in Information Retrieval. (SIGIR 2018)
 
-For VTCM, please cite:
-
-Not yet published.
 
 ## Contact
 
